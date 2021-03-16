@@ -5,8 +5,10 @@ const List = ({ items, removeItem, editItem }) => {
     <div className='name-list'>
       {items.map((item) => {
         const { id, title } = item;
+
         return (
           <article className='name-item' key={id}>
+            <img className='image' src={`//joeschmoe.io/api/v1/${id}`} />
             <p className='title'>{title}</p>
             <div className='btn-container'>
               <button

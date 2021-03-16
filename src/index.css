@@ -73,12 +73,18 @@ main {
 }
 .name {
   padding: 0.5rem;
-  padding-left: 1rem;
+  padding-left: rem;
   background: rgb(236, 231, 231);
   border-radius: 0.25rem;
   border-color: transparent;
   font-size: 1rem;
   flex: 1 0 auto;
+}
+.image {
+border-radius: 100%;
+background-color:lightgrey;
+height: 3rem;
+
 }
 .name::placeholder {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -106,9 +112,8 @@ main {
 }
 
 .name-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display:flex;
+  /*justify-content: right;*/
   margin: 1em 1em;
   padding-left: 1rem;
   text-transform: capitalize;
@@ -119,9 +124,19 @@ main {
 }
 .title {
   letter-spacing: 2px;
+  padding-left: 1rem;
+}
+.btn-container{
+  display: flex;
+  padding-top: 10px;
+  position: absolute;
+  padding-left: 27rem;
+
 }
 .edit-btn,
 .delete-btn {
+  display: inline;
+  justify-content: right;
   background: transparent;
   border-color: transparent;
   cursor: pointer;
@@ -129,6 +144,7 @@ main {
   margin: 0 0.15rem;
   transition: var(--transition);
 }
+
 .edit-btn {
   color: hsl(125, 71%, 66%);
 }
